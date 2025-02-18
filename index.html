@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(to top right, black 0.0%, #3d2163 100.0%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .team-container {
+            width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            box-shadow: 0 8px 32px 0 transparent;
+            padding: 30px;
+        }
+        .team-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.03);
+        }
+        .avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 3px solid rgba(255,255,255,.08);
+        }
+        .member-info {
+            flex-grow: 1;
+        }
+        .member-name {
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+        .member-role {
+            color: rgba(255,255,255,.61);
+            font-size: 14px;
+        }
+        .contact-btn {
+            background: rgba(70,36,128,.7);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-btn:hover {
+            background: rgba(128,128,128,.61);
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .team-member {
+            animation: float 4s ease-in-out infinite;
+        }
+        .team-member:nth-child(2) {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="team-container">
+        <div class="team-header">
+            <h1>Our Team</h1>
+        </div>
+        
+        <div class="team-member">
+            <img src="https://raw.githubusercontent.com/alwddwgk/alwddwgk.github.io/refs/heads/main/avatar.jpg" alt="Developer" class="avatar">
+            <div class="member-info">
+                <div class="member-name">alwddw</div>
+                <div class="member-role">Developer</div>
+            </div><a href="alwddw@icloud.com" class="button-link">
+    <button class="contact-btn">Contact</button>
+</a>
